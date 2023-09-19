@@ -192,7 +192,7 @@ header .bell {
   gap: 10px;
 }
 header .bell i {
-  font-size: 32px;
+  font-size: 26px;
   position: relative;
 }
 header .bell i::after {
@@ -210,7 +210,7 @@ header .bell i::after {
   -o-border-radius: var(--border-radi-50);
 }
 header .bell img {
-  width: 40px;
+  width: 35px;
 }
 
 /* header */
@@ -241,9 +241,17 @@ main > h1::after {
   grid-template-columns: repeat(auto-fill, minmax(445px, 1fr));
   gap: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1270px) {
   .container {
-    grid-template-columns: repeat(auto-fill, 100%);
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .container > div {
+    /* padding: 10px ; */
+  }
+}
+@media (max-width: 500px) {
+  .container > div {
+    padding: 20px 20px !important ;
   }
 }
 .container > div {
@@ -992,7 +1000,6 @@ tr td img {
   flex-grow: 1;
 }
 label input {
-  width: 100%;
   border-radius: var(--border-radi-5px);
   -webkit-border-radius: var(--border-radi-5px);
   -moz-border-radius: var(--border-radi-5px);
@@ -1001,7 +1008,7 @@ label input {
 }
 #email {
   cursor: not-allowed;
-  flex-grow: 1;
+  width: 100%;
   background-color: #f0f4f8;
   text-transform: none !important;
 }
@@ -1053,6 +1060,7 @@ label input {
   -o-border-radius: var(--border-radi-10px);
 }
 .Social-Info div input {
+  width: 100%;
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -1171,7 +1179,7 @@ label input {
   border-radius: var(--border-radi-50);
   width: 30px;
   height: 30px;
-  outline: 3px solid;
+  outline: 3px solid #ccc;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -1412,9 +1420,9 @@ form:nth-of-type(2) label {
   display: flex;
   align-items: center;
 }
- .gap-10px{
+.gap-10px {
   gap: 10px;
- }
+}
 .flex-gap-10-row {
   display: flex;
 
