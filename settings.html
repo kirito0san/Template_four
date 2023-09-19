@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>settings</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <script
+      src="https://kit.fontawesome.com/e1b4aac364.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="parent">
+      <aside class="p-30 m-0-auto">
+        <h2>elzero</h2>
+        <a href="index.html"
+          ><i class="fa-regular fa-rectangle-list"></i>
+          <p>dashboard</p>
+        </a>
+        <a class="choose" href="settings.html"
+          ><i class="fa-solid fa-gear"></i>
+          <p>settings</p>
+        </a>
+        <a href="profile.html"
+          ><i class="fa-regular fa-user"></i>
+          <p>profile</p>
+        </a>
+        <a href="projects.html"
+          ><i class="fa-solid fa-diagram-project"></i>
+          <p>projects</p>
+        </a>
+        <a href="courses.html"
+          ><i class="fa-solid fa-graduation-cap"></i>
+          <p>courses</p>
+        </a>
+        <a href="friends.html"
+          ><i class="fa-solid fa-user-group"></i>
+          <p>friends</p>
+        </a>
+        <a href="flies.html"
+          ><i class="fa-regular fa-file"></i>
+          <p>flies</p>
+        </a>
+        <a href="plans.html"
+          ><i class="fa-regular fa-credit-card"></i>
+          <p>plans</p>
+        </a>
+      </aside>
+      <header class="p-20">
+        <label class="header-search p-10" for="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input placeholder="type a keyword" id="search" type="search" />
+        </label>
+        <div class="bell">
+          <i class="fa-regular fa-bell"></i>
+          <img src=".//imgs/avatar.png" alt="" />
+        </div>
+      </header>
+      <main class="p-20">
+        <h1 class="p-10up-down">settings</h1>
+        <div class="container p-10up-down">
+          <!-- Website -->
+          <div>
+            <h2>site control</h2>
+            <p class="op-5">Control The Website If There Is Maintenance</p>
+            <div class="Website">
+              <div>
+                <h4 class="p-10up-down">Website Control</h4>
+                <p class="op-5">Open/Close Website And Type The Reason</p>
+              </div>
+              <label class="cilck center-a" for="Website-control">
+                <input
+                  id="Website-control"
+                  name="Website-control"
+                  type="checkbox"
+                />
+                <span class="cilck-span center-a"></span>
+              </label>
+            </div>
+            <textarea
+              class="p-10 mar-top-20px"
+              name="close-message"
+              id="close-message"
+              cols=""
+              rows="6"
+              placeholder="close message content"
+            ></textarea>
+          </div>
+          <!-- Website -->
+          <!-- General Info -->
+          <div>
+            <h2>General Info</h2>
+            <p class="op-5">General Information About Your Account</p>
+            <div class="General">
+              <div>
+                <h4 class="p-10up-down">Website Control</h4>
+                <p class="op-5">Open/Close Website And Type The Reason</p>
+              </div>
+              <label class="flex-gap-10-column mar-top-20px" for="first-name">
+                <p class="op-5">first-name</p>
+                <input
+                  class="p-5"
+                  id="first-name"
+                  name="one"
+                  type="text"
+                  placeholder="First Name"
+                />
+              </label>
+              <label class="flex-gap-10-column mar-top-20px" for="last-name">
+                <p class="op-5">last-name</p>
+                <input
+                  class="p-5"
+                  id="last-name"
+                  name="one"
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </label>
+              <label class="flex-gap-10-column mar-top-20px" for="email">
+                <p class="op-5">email</p>
+                <div class="email flex-gap-10-row">
+                  <input
+                    class="p-5"
+                    id="email"
+                    name="one"
+                    type="email"
+                    value="o@nn.sa"
+                    disabled
+                  />
+                  <input type="submit" value="change" id="change" />
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- General Info -->
+          <!-- Security Info -->
+          <!-- <div>
+            <h2>Security Info</h2>
+            <p class="op-5">Control The Website If There Is Maintenance</p>
+            <div class="Security-Info">
+              <div class="flex-gap-10-row center-a border-bot-1px p-30up-down">
+                <div class="grow-1">
+                  <h3 class="p-10up-down">Password</h3>
+                  <p class="op-5">Last Change On 25/10/2021</p>
+                </div>
+                <a href="#" class="btn-shape">change</a>
+              </div>
+              <div class="flex-gap-10-row border-bot-1px p-30up-down">
+                <div class="grow-1">
+                  <h3 class="p-10up-down">Two-Factor Authentication</h3>
+                  <p class="op-5">Enable/Disable The Feature</p>
+                </div>
+                <label class="cilck center-a" for="Security-Info">
+                  <input
+                    id="Security-Info"
+                    name="Security-Info"
+                    type="checkbox"
+                  />
+                  <span class="cilck-span center-a"></span>
+                </label>
+              </div>
+              <div class="flex-gap-10-row center-a p-30up-down">
+                <div class="grow-1">
+                  <h3 class="p-10up-down">Devices</h3>
+                  <p class="op-5">Check The Login Devices List</p>
+                </div>
+                <a href="#" class="btn-shape">Devices</a>
+              </div>
+            </div>
+          </div> -->
+          <!-- Security Info -->
+          <!-- Social Info -->
+
+          <!-- <div>
+            <h2>Social Info</h2>
+            <p class="op-5">Social Media Information</p>
+            <div class="Social-Info flex-gap-20-column mar-top-20px">
+              <div>
+                <i class="fa-brands fa-twitter center-a op-5"></i>
+                <input
+                  class="w-full"
+                  type="text"
+                  placeholder="Twitter Username"
+                />
+              </div>
+              <div>
+                <i class="fa-brands fa-facebook-f center-a op-5"></i>
+                <input
+                  class="w-full"
+                  type="text"
+                  placeholder="Facebook Username"
+                />
+              </div>
+              <div>
+                <i class="fa-brands fa-linkedin center-a op-5"></i>
+                <input
+                  class="w-full"
+                  type="text"
+                  placeholder="Linkedin Username"
+                />
+              </div>
+              <div>
+                <i class="fa-brands fa-youtube center-a op-5"></i>
+                <input
+                  class="w-full"
+                  type="text"
+                  placeholder="Youtube Username"
+                />
+              </div>
+            </div>
+          </div> -->
+          <!-- Social Info -->
+          <!-- Widgets Control -->
+
+          <!-- <div>
+
+            <h2>Widgets Control</h2>
+            <p class="op-5">Show/Hide Widgets</p>
+            <form
+              class="Widgets-Control flex-gap-20-column mar-top-20px p-30-bot"
+              action=""
+            >
+              <label class="flex-gap-10-row center-a" for="Quick">
+                <input type="checkbox" name="Widgets-Control" id="Quick" />
+                <span></span>
+                <p>Quick Draft</p>
+              </label>
+              <label class="gap-10px center-a" for="Top-Search-Items">
+                <input
+                  type="checkbox"
+                  name="Widgets-Control"
+                  id="Top-Search-Items"
+                />
+                <span></span>
+                <p>Top Search Items</p>
+              </label>
+              <label class="gap-10px center-a" for="Latest-Tasks">
+                <input
+                  type="checkbox"
+                  name="Widgets-Control"
+                  id="Latest-Tasks"
+                />
+                <span></span>
+                <p>Latest Tasks</p>
+              </label>
+              <label class="gap-10px center-a" for="Tickets-Statistics">
+                <input
+                  type="checkbox"
+                  name="Widgets-Control"
+                  id="Tickets-Statistics"
+                />
+                <span></span>
+                <p>Tickets Statistics</p>
+              </label>
+              <label class="gap-10px center-a" for="Latest-News">
+                <input
+                  type="checkbox"
+                  name="Widgets-Control"
+                  id="Latest-News"
+                />
+                <span></span>
+                <p>Latest News</p>
+              </label>
+              <label class="flex-gap-10-row center-a" for="Yearly-Targets">
+                <input
+                  type="checkbox"
+                  name="Widgets-Control"
+                  id="Yearly-Targets"
+                />
+                <span></span>
+                <p>Yearly Targets</p>
+              </label>
+            </form>
+          </div> -->
+          <!-- Widgets Control -->
+
+          <!-- Backup Manager -->
+
+          <!-- <div class="Backup-Manager">
+            <h2>Backup Manager</h2>
+            <p class="op-5">Control Backup Time And Location</p>
+            <form class="border-bot-1px flex-gap-10-column p-30-bot" action="">
+              <label class="flex-gap-10-row center-a" for="daily">
+                <input type="radio" name="Backup-Manager-date" id="daily" />
+                <span></span>
+                <p>daily</p>
+              </label>
+              <label class="flex-gap-10-row center-a" for="Weekly">
+                <input type="radio" name="Backup-Manager-date" id="Weekly" />
+                <span></span>
+                <p>Weekly</p>
+              </label>
+              <label class="flex-gap-10-row center-a" for="Monthly">
+                <input type="radio" name="Backup-Manager-date" id="Monthly" />
+                <span></span>
+                <p>Monthly</p>
+              </label>
+            </form> -->
+
+<!-- 
+
+            <form class="mar-top-20px" action="">
+              <label class="flex-gap-10-row center-a" for="Megaman">
+                <input type="radio" name="Backup-Manager-size" id="Megaman" />
+                <span class="flex-gap-10-column">
+                  <i class="fa-solid fa-server"></i>
+                  <p>Megaman</p>
+                </span>
+              </label>
+              <label class="flex-gap-10-row center-a" for="Zero">
+                <input type="radio" name="Backup-Manager-size" id="Zero" />
+                <span class="flex-gap-10-column">
+                  <i class="fa-solid fa-server"></i>
+                  <p>Zero</p>
+                </span>
+              </label>
+              <label class="flex-gap-10-row center-a" for="Sigma">
+                <input type="radio" name="Backup-Manager-size" id="Sigma" />
+                <span class="flex-gap-10-column">
+                  <i class="fa-solid fa-server"></i>
+                  <p>Megaman</p>
+                </span>
+              </label>
+            </form>
+          </div> -->
+
+          <!-- Backup Manager -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
