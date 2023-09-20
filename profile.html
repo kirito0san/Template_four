@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="framwork.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="normalize.css" />
     <script
@@ -16,13 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
     <div class="parent">
       <aside class="p-30 m-0-auto">
         <h2>elzero</h2>
-        <a  href="index.html"
+        <a href="index.html"
           ><i class="fa-regular fa-rectangle-list"></i>
           <p>dashboard</p>
         </a>
@@ -66,11 +67,202 @@
         </div>
       </header>
       <main class="p-20">
-        <h1 class="p-10up-down">dashboard</h1>
-        <div class="container p-10up-down">
+        <h1 class="p-10up-down">profile</h1>
 
+        <div class="container profile p-10up-down">
+          <div class="flex-row">
+            <div class="gap-10px flex-column center-a">
+              <img src=".//imgs/avatar.png" alt="" />
+              <h3>ahmed syed</h3>
+              <p class="op-5">Level 180</p>
+              <span class="profile-prog"></span>
+              <div>
+                <i class="fa-solid fa-star" style="color: #f59e0b"></i>
+                <i class="fa-solid fa-star" style="color: #f59e0b"></i>
+                <i class="fa-solid fa-star" style="color: #f59e0b"></i>
+                <i class="fa-solid fa-star" style="color: #f59e0b"></i>
+                <i class="fa-solid fa-star" style="color: #f59e0b"></i>
+              </div>
+              <p class="sm-2 op-5">5500 rating</p>
+            </div>
+            <div class="grow-1">
+              <div
+                class="grid border-bot-1px center-a-flex-end padding-bot-10px center-a"
+              >
+                <div class="flex-gap-10-column">
+                  <p>General Information</p>
+                  <p class="sm-2">
+                    <span class="op-5">Full Name </span> ahmed syed
+                  </p>
+                </div>
+                <p class="sm-2"><span class="op-5">Gender:</span>male</p>
+                <p class="sm-2"><span class="op-5">Country:</span> Egypt</p>
+                <label class="cilck center-a" for="General">
+                  <input id="General" name="General" type="checkbox" />
+                  <span class="cilck-span center-a sm-1-hight"></span>
+                </label>
+              </div>
+              <div
+                class="grid border-bot-1px center-a-flex-end padding-bot-10px center-a"
+              >
+                <div class="flex-gap-10-column">
+                  <p>Personal Information</p>
+                  <p class="sm-2"><span class="op-5">Email: </span> o@nn.sa</p>
+                </div>
+                <p class="sm-2"><span class="op-5">Phone:</span>01119089816</p>
+                <p class="sm-2">
+                  <span class="op-5"> Date Of Birth:</span> 7/12/2000
+                </p>
+                <label class="cilck center-a" for="Personal">
+                  <input id="Personal" name="Personal" type="checkbox" />
+                  <span class="cilck-span center-a sm-1-hight"></span>
+                </label>
+              </div>
+              <div
+                class="grid border-bot-1px center-a-flex-end padding-bot-10px center-a"
+              >
+                <div class="flex-gap-10-column">
+                  <p>Job Information</p>
+                  <p class="sm-2">
+                    <span class="op-5">Title: </span> Full Stack Developer
+                  </p>
+                </div>
+                <p class="sm-2">
+                  <span class="op-5"> Programming Language:</span> Python
+                </p>
+                <p class="sm-2">
+                  <span class="op-5"> Years Of Experience:</span> +15
+                </p>
+                <label class="cilck center-a" for="Job">
+                  <input id="Job" name="Job " type="checkbox" />
+                  <span class="cilck-span center-a sm-1-hight"></span>
+                </label>
+              </div>
+              <div class="grid center-a-flex-end padding-bot-10px center-a">
+                <div class="flex-gap-10-column">
+                  <p>Billing Information</p>
+                  <p class="sm-2">
+                    <span class="op-5">Payment Method: </span> Paypal
+                  </p>
+                </div>
+                <p class="sm-2">
+                  <span class="op-5"> Email:</span> email@website.com
+                </p>
+                <p class="sm-2">
+                  <span class="op-5"> Subscription:</span> Monthly
+                </p>
+                <label class="cilck center-a" for="Billing ">
+                  <input id="Billing " name="Billing " type="checkbox" />
+                  <span class="cilck-span center-a sm-1-hight"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="my-skill">
+            <h2>my skill</h2>
+            <p class="op-5">Complete Skills List</p>
+
+            <div
+              class="flex-gap-5-row flex-wrap border-bot-1px padding-bot-10px p-10up-down"
+            >
+              <p class="btn-shape">HTML</p>
+              <p class="btn-shape">Pugjs</p>
+              <p class="btn-shape">HAML</p>
+            </div>
+            <div
+              class="flex-gap-5-row flex-wrap border-bot-1px padding-bot-10px p-15up-down"
+            >
+              <p class="btn-shape">Reactjs</p>
+              <p class="btn-shape">Vuejs</p>
+            </div>
+            <div
+              class="flex-gap-5-row flex-wrap border-bot-1px padding-bot-10px p-15up-down"
+            >
+              <p class="btn-shape">Jasmine</p>
+              <p class="btn-shape">Jest</p>
+            </div>
+            <div
+              class="flex-gap-5-row flex-wrap border-bot-1px padding-bot-10px p-15up-down"
+            >
+              <p class="btn-shape">Laravel</p>
+              <p class="btn-shape">PHP</p>
+            </div>
+            <div
+              class="flex-gap-5-row flex-wrap border-bot-1px padding-bot-10px p-15up-down"
+            >
+              <p class="btn-shape">JavaScript</p>
+              <p class="btn-shape">TypeScript</p>
+            </div>
+            <div
+              class="flex-gap-5-row flex-wrap border-bot-1px padding-bot-10px p-15up-down"
+            >
+              <p class="btn-shape">CSS</p>
+              <p class="btn-shape">SASS</p>
+              <p class="btn-shape">Stylus</p>
+            </div>
+            <div class="flex-gap-5-row flex-wrap padding-bot-10px p-15up-down">
+              <p class="btn-shape">Django</p>
+              <p class="btn-shape">Python</p>
+            </div>
+          </div>
+          <div class="Latest-Activities">
+            <h2>Latest Activities</h2>
+            <p class="op-5">Latest Activities Done By The User</p>
+
+            <div class="flex-gap-10-row ju-sp-bt border-bot-1px p-15up-down">
+              <div class="flex-gap-10-row">
+                <img class="width-1" src=".//imgs/activity-01.png" alt="" />
+                <div class="ju-sp-bt flex-gap-5-column">
+                  <p>Store</p>
+                  <p>Bought The Mastering Python Course</p>
+                </div>
+              </div>
+              <div class="ju-sp-bt flex-gap-5-column center-a-flex-end">
+                <p>18:10</p>
+                <p class="op-5">yasterday</p>
+              </div>
+            </div>
+            <div class="flex-gap-10-row ju-sp-bt border-bot-1px p-15up-down">
+              <div class="flex-gap-10-row">
+                <img class="width-1" src=".//imgs/activity-02.png" alt="" />
+                <div class="ju-sp-bt flex-gap-5-column">
+                  <p>Academy</p>
+                  <p>Got The PHP Certificate</p>
+                </div>
+              </div>
+              <div class="ju-sp-bt flex-gap-5-column center-a-flex-end">
+                <p>16:05</p>
+                <p class="op-5">yasterday</p>
+              </div>
+            </div>
+            <div class="flex-gap-10-row ju-sp-bt border-bot-1px p-15up-down">
+              <div class="flex-gap-10-row">
+                <img class="width-1" src=".//imgs/activity-03.png" alt="" />
+                <div class="ju-sp-bt flex-gap-5-column">
+                  <p>Badges</p>
+                  <p>Unlocked The 10 Skills Badge</p>
+                </div>
+              </div>
+              <div class="ju-sp-bt flex-gap-5-column center-a-flex-end">
+                <p>18:05</p>
+                <p class="op-5">yasterday</p>
+              </div>
+            </div>
+            <div class="flex-gap-10-row ju-sp-bt border-bot-1px p-15up-down">
+              <div class="flex-gap-10-row">
+                <img class="width-1" src=".//imgs/activity-01.png" alt="" />
+                <div class="ju-sp-bt flex-gap-5-column">
+                  <p>Store</p>
+                  <p>Bought The Typescript Course</p>
+                </div>
+              </div>
+              <div class="ju-sp-bt flex-gap-5-column center-a-flex-end">
+                <p>12:10</p>
+                <p class="op-5">yasterday</p>
+              </div>
+            </div>
+          </div>
         </div>
-
       </main>
     </div>
   </body>

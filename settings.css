@@ -1,0 +1,294 @@
+
+/* start settings */
+/* site control */
+.Website {
+  display: flex;
+  justify-content: space-between;
+}
+.website > * {
+  flex-basis: 40%;
+}
+#close-message {
+  resize: none;
+  outline: none;
+  border-radius: var(--border-radi-10px);
+  -webkit-border-radius: var(--border-radi-10px);
+  -moz-border-radius: var(--border-radi-10px);
+  -ms-border-radius: var(--border-radi-10px);
+  -o-border-radius: var(--border-radi-10px);
+}
+/* site control */
+
+/* General Info */
+.email {
+  flex-grow: 1;
+}
+label input {
+  border-radius: var(--border-radi-5px);
+  -webkit-border-radius: var(--border-radi-5px);
+  -moz-border-radius: var(--border-radi-5px);
+  -ms-border-radius: var(--border-radi-5px);
+  -o-border-radius: var(--border-radi-5px);
+}
+#email {
+  cursor: not-allowed;
+  width: 100%;
+  background-color: #f0f4f8;
+  text-transform: none !important;
+}
+#change {
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  background-color: white;
+  color: var(--background-color-3);
+}
+
+/* General Info */
+
+/* Security Info */
+.Security-Info div a.btn-shape {
+  color: var(--white);
+  width: 80px;
+  height: fit-content;
+  /* text-align: center;/ */
+  /* padding: 10px 0; */
+  font-size: var(--font-size-1);
+}
+.Security-Info div a.btn-shape:hover {
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
+.Security-Info div:nth-of-type(1) a.btn-shape {
+  background-color: var(--background-color-3);
+  color: var(--white);
+}
+.Security-Info div:nth-of-type(3) a.btn-shape {
+  background-color: var(--background-color-2);
+  color: var(--black);
+}
+
+/* Security Info */
+/* Social-Info */
+.Social-Info div * {
+  padding: 10px;
+}
+.Social-Info div {
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  border-radius: var(--border-radi-10px);
+  -webkit-border-radius: var(--border-radi-10px);
+  -moz-border-radius: var(--border-radi-10px);
+  -ms-border-radius: var(--border-radi-10px);
+  -o-border-radius: var(--border-radi-10px);
+}
+.Social-Info div input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+.Social-Info div i {
+  width: 50px;
+  border-right: 1px solid #aaa;
+  font-size: var(--font-size-3);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.Social-Info div:focus-within i {
+  color: var(--black);
+}
+.Social-Info div:focus-within {
+  background-color: #aaa;
+}
+
+/* Social-Info */
+/* Widgets Control */
+.Widgets-Control {
+}
+.Widgets-Control label {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.Widgets-Control label:hover span {
+  border-color: #235a99;
+}
+.Widgets-Control label input {
+  display: none;
+}
+
+.Widgets-Control label span {
+  border-radius: var(--border-radi-5px);
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  transition: var(--transition);
+  transition-property: border-color;
+  position: relative;
+  -webkit-border-radius: var(--border-radi-5px);
+  -moz-border-radius: var(--border-radi-5px);
+  -ms-border-radius: var(--border-radi-5px);
+  -o-border-radius: var(--border-radi-5px);
+}
+.Widgets-Control label input:checked + span {
+  border-color: var(--white);
+}
+.Widgets-Control label span::after {
+  content: "\2714";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: var(--transition);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+  -moz-transform: translate(-50%, -50%) scale(0);
+  -ms-transform: translate(-50%, -50%) scale(0);
+  -o-transform: translate(-50%, -50%) scale(0);
+  border-radius: var(--border-radi-5px);
+  -webkit-border-radius: var(--border-radi-5px);
+  -moz-border-radius: var(--border-radi-5px);
+  -ms-border-radius: var(--border-radi-5px);
+  -o-border-radius: var(--border-radi-5px);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.Widgets-Control label input:checked + span::after {
+  background-color: var(--background-color-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  transform: translate(-50%, -50%) scale(1) rotate(3turn);
+  -webkit-transform: translate(-50%, -50%) scale(1) rotate(3turn);
+  -moz-transform: translate(-50%, -50%) scale(1) rotate(3turn);
+  -ms-transform: translate(-50%, -50%) scale(1) rotate(3turn);
+  -o-transform: translate(-50%, -50%) scale(1) rotate(3turn);
+}
+
+/* Widgets Control */
+/* Backup Manager */
+
+.Backup-Manager {
+}
+.Backup-Manager form:nth-of-type(1) label {
+  margin-left: 15px;
+  margin-top: 15px;
+
+  cursor: pointer;
+}
+.Backup-Manager form:nth-of-type(1) label:hover span {
+  border-color: var(--background-color-3);
+}
+.Backup-Manager label input {
+  display: none;
+}
+
+.Backup-Manager form:nth-of-type(1) label span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radi-50);
+  width: 30px;
+  height: 30px;
+  outline: 3px solid #ccc;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  position: relative;
+  -webkit-border-radius: var(--border-radi-50);
+  -moz-border-radius: var(--border-radi-50);
+  -ms-border-radius: var(--border-radi-50);
+  -o-border-radius: var(--border-radi-50);
+}
+.Backup-Manager form:nth-of-type(1) label input:checked + span {
+  outline-color: var(--background-color-3);
+}
+.Backup-Manager form:nth-of-type(1) label span::after {
+  content: "";
+  position: relative;
+  transform: scale(0);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  border-radius: var(--border-radi-50);
+  -webkit-border-radius: var(--border-radi-50);
+  -moz-border-radius: var(--border-radi-50);
+  -ms-border-radius: var(--border-radi-50);
+  -o-border-radius: var(--border-radi-50);
+}
+.Backup-Manager form:nth-of-type(1) label input:checked + span::after {
+  background-color: var(--background-color-3);
+  color: var(--white);
+  width: 70%;
+  height: 70%;
+  transform: scale(1);
+}
+
+form:nth-of-type(2) {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(30%, 1fr));
+}
+@media (max-width: 767px) {
+  form:nth-of-type(2) {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
+}
+form:nth-of-type(2) {
+  flex-wrap: wrap;
+}
+form:nth-of-type(2) span {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: var(--border-radi-5px);
+  font-size: var(--font-size-1);
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--background-color-2);
+  -webkit-border-radius: var(--border-radi-5px);
+  -moz-border-radius: var(--border-radi-5px);
+  -ms-border-radius: var(--border-radi-5px);
+  -o-border-radius: var(--border-radi-5px);
+}
+form:nth-of-type(2) input:checked + span {
+  border-color: var(--background-color-3);
+  color: var(--background-color-3);
+}
+form:nth-of-type(2) label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 10px;
+  border-radius: var(--border-radi-10px);
+  -webkit-border-radius: var(--border-radi-10px);
+  -moz-border-radius: var(--border-radi-10px);
+  -ms-border-radius: var(--border-radi-10px);
+  -o-border-radius: var(--border-radi-10px);
+}
+form:nth-of-type(2) label {
+  flex-basis: calc(90% / 3);
+  min-width: fit-content;
+}
