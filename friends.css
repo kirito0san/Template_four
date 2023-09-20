@@ -1,0 +1,44 @@
+.box-m {
+  position: relative;
+}
+.i-head {
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  position: absolute;
+}
+.i-head i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color-2);
+  border-radius: var(--border-radi-50);
+  -webkit-border-radius: var(--border-radi-50);
+  -moz-border-radius: var(--border-radi-50);
+  -ms-border-radius: var(--border-radi-50);
+  -o-border-radius: var(--border-radi-50);
+}
+.friend-img {
+
+}
+.friend-img img {
+  width: 100px;
+  border-radius: var(--border-radi-50);
+  -webkit-border-radius: var(--border-radi-50);
+  -moz-border-radius: var(--border-radi-50);
+  -ms-border-radius: var(--border-radi-50);
+  -o-border-radius: var(--border-radi-50);
+}
+.body-i i{
+    width: 25px;
+}
+.vip h2{
+    text-transform: uppercase;
+    color:rgba(245, 159, 11, 0.288);
+    font-size: var(--font-size-9);
+}
+.Joined .btn-shape{
+    color: var(--white);
+}
