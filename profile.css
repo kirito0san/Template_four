@@ -24,6 +24,16 @@
 }
 }
 @media (max-width: 767px) {
+
+  .Latest-Activities > div  div{
+    flex-direction: column;
+    align-items: center ;
+      gap: 20px;
+  }
+  .Latest-Activities > div{
+    gap: 20px;
+    flex-direction: column;
+  }
   .flex-gap-5-row.flex-wrap{
     justify-content: center;
   }
@@ -43,7 +53,7 @@
   .profile > div > div:nth-of-type(1) {
     border-right: none !important;
   }
-  .profile > div > div:nth-of-type(2) {
+  .profile > div > div.grow-1:nth-of-type(2) {
     text-align: center;
   }
   .grid label {
