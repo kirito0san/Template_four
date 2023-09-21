@@ -1,4 +1,3 @@
-
 /* start settings */
 /* site control */
 .Website {
@@ -196,14 +195,26 @@ label input {
 .Backup-Manager label input {
   display: none;
 }
-
-.Backup-Manager form:nth-of-type(1) label span {
+.circle {
+  content: "";
+  position: relative;
+  transform: scale(0);
+  width: 50px;
+  height: 50px;
+  transition: var(--transition);
+  border-radius: var(--border-radi-50);
+  -webkit-border-radius: var(--border-radi-50);
+  -moz-border-radius: var(--border-radi-50);
+  -ms-border-radius: var(--border-radi-50);
+  -o-border-radius: var(--border-radi-50);
+}
+.Backup-Manager form:nth-of-type(1) label > span {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radi-50);
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   outline: 3px solid #ccc;
   transition: var(--transition);
   -webkit-transition: var(--transition);
@@ -219,27 +230,17 @@ label input {
 .Backup-Manager form:nth-of-type(1) label input:checked + span {
   outline-color: var(--background-color-3);
 }
-.Backup-Manager form:nth-of-type(1) label span::after {
-  content: "";
-  position: relative;
-  transform: scale(0);
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  border-radius: var(--border-radi-50);
-  -webkit-border-radius: var(--border-radi-50);
-  -moz-border-radius: var(--border-radi-50);
-  -ms-border-radius: var(--border-radi-50);
-  -o-border-radius: var(--border-radi-50);
-}
-.Backup-Manager form:nth-of-type(1) label input:checked + span::after {
+
+.Backup-Manager form:nth-of-type(1) label input:checked + span span {
   background-color: var(--background-color-3);
   color: var(--white);
-  width: 70%;
-  height: 70%;
-  transform: scale(1);
+  width: 100%;
+  height: 100%;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
 }
 
 form:nth-of-type(2) {
