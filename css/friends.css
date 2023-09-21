@@ -8,6 +8,7 @@
   position: absolute;
 }
 .i-head i {
+  cursor: pointer;
   width: 30px;
   height: 30px;
   display: flex;
@@ -19,6 +20,15 @@
   -moz-border-radius: var(--border-radi-50);
   -ms-border-radius: var(--border-radi-50);
   -o-border-radius: var(--border-radi-50);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.i-head i:hover {
+background-color: var(--background-color-3);
+color: var(--white);
 }
 .friend-img {
 
