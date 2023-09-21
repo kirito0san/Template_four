@@ -325,7 +325,7 @@ main > h1::after {
   z-index: 42;
   top: -42px;
   left: 28px;
-  background-image: url(.//imgs/avatar.png);
+  background-image: url(../imgs/avatar.png);
   background-position: center;
   background-size: cover;
   border: 5px solid var(--white);

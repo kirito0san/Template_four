@@ -1,0 +1,92 @@
+.files {
+  display: grid;
+  margin: 10px 0;
+  grid-template-columns: 1fr 250px !important;
+  grid-template-areas:
+    "files-page   files-stats"
+    "files-page   .";
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .files {
+    grid-template-columns: 100% !important;
+    grid-template-areas:
+      "files-stats"
+      "files-page ";
+  }
+}
+.files-stats-box {
+  border: 1px solid var(--background-color-2);
+  border-radius: var(--border-radi-10px);
+  -webkit-border-radius: var(--border-radi-10px);
+  -moz-border-radius: var(--border-radi-10px);
+  -ms-border-radius: var(--border-radi-10px);
+  -o-border-radius: var(--border-radi-10px);
+}
+.files-stats-box > div > i {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.files-stats {
+  grid-area: files-stats;
+  padding: 10px !important;
+}
+.files-stats a {
+  width: fit-content;
+  padding: 10px;
+  align-self: center;
+  border-radius: var(--border-radi-10px);
+  -webkit-border-radius: var(--border-radi-10px);
+  -moz-border-radius: var(--border-radi-10px);
+  -ms-border-radius: var(--border-radi-10px);
+  -o-border-radius: var(--border-radi-10px);
+}
+
+.files-stats a:hover i {
+  animation: up-down cubic-bezier(0.9, 0.03, 0.69, 0.22) 0.5s infinite;
+  -webkit-animation: up-down cubic-bezier(0.9, 0.03, 0.69, 0.22) 0.5s infinite;
+}
+
+@keyframes up-down {
+  to {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+  }
+}
+.files-page {
+  grid-area: files-page;
+  background-color: transparent !important;
+  background-color: var(--white);
+  border-radius: var(--border-radi-10px);
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px 20px;
+  position: relative;
+}
+.files-page > div {
+  padding-top: 20px !important;
+  background-color: var(--white);
+  border-radius: var(--border-radi-10px);
+  padding: 10px;
+}
+.files-page i {
+  align-self: flex-start;
+  color: gray;
+}
+.files-page > div:hover img {
+  rotate: 10deg;
+}
+.files-page img {
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
