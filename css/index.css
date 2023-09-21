@@ -820,7 +820,7 @@ main > h1::after {
 }
 .latest-img::after {
   content: "";
-  background-image: url(".//imgs/avatar.png");
+  background-image: url("../imgs/avatar.png");
   width: 45px;
   height: 45px;
   left: 0;
